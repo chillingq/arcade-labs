@@ -12,6 +12,7 @@ SCREEN_WIDTH = 1200
 SCREEN_HEIGHT = 600
 
 
+
 class MyGame(arcade.Window):
 
 
@@ -66,6 +67,8 @@ class MyGame(arcade.Window):
             coin2.center_x = random.randrange(SCREEN_WIDTH)
             coin2.center_y = random.randrange(SCREEN_HEIGHT)
 
+
+
             # Add the coin to the lists
             self.coin_list.append(coin)
             self.coin_list.append(coin2)
@@ -110,7 +113,6 @@ class MyGame(arcade.Window):
         for coin in coins_hit_list:
             coin.remove_from_sprite_lists()
             self.score += 1
-
 
 
 def main():
